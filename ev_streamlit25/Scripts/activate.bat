@@ -8,7 +8,7 @@ if defined _OLD_CODEPAGE (
     "%SystemRoot%\System32\chcp.com" 65001 > nul
 )
 
-set VIRTUAL_ENV=C:\Users\ignac\Desktop\MasterPython\MODULO 8\streamlit 25\ev_streamlit25
+set VIRTUAL_ENV=C:\Users\ignac\Desktop\MasterPython\MODULO 8\streamlit 25\clase25\ev_streamlit25
 
 if not defined PROMPT set PROMPT=$P$G
 

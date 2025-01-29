@@ -38,7 +38,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="C:\Users\ignac\Desktop\MasterPython\MODULO 8\streamlit 25\ev_streamlit25"
+VIRTUAL_ENV="C:\Users\ignac\Desktop\MasterPython\MODULO 8\streamlit 25\clase25\ev_streamlit25"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"
