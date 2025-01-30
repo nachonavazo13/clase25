@@ -12,8 +12,27 @@ from PIL import Image
 
 # configuracion de la app
 def main():
-    st.title('App con Streamlit 25')
-    st.subheader('Esta app permite visualizar datos de la NBA')
+    # Comandos de Texto basicos
+    # st.title('App con Streamlit 25')
+    # st.header('Este es el Header')
+    # st.subheader('Este es el Subheader')
+    # st.sidebar.title('Menu')
+    # st.text('este seria un texto para la tabla')
+    # st.subheader('Esta app permite visualizar datos de la NBA')
+    # nombre = 'Ignacio'
+    # st.text(f'El jugador destacado es {nombre}')
+    # st.markdown('# Bebo')
+    # st.markdown('## Bebo')
+    # st.markdown('### Bebo')
+    # st.markdown('#### Bebo')
+    # st.markdown('##### Bebo')
+    # st.success('No les demos nada, y quitemosles todo')
+    # st.info('Esto es una informacion')
+    # st.warning('Esto es un aviso')
+    # st.error('Esto es un error')
+    # st.help('Esto es ayuda')
+    # st.write('el texto que querramos')
+
 
 
 # Crear ejecutable
