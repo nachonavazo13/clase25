@@ -81,6 +81,26 @@ def main():
     else:
         st.error('Debe aceptar las condiciones')
 
+    rta = st.button('Hola Nacho')
+    
+    if rta:
+        st.success('Que haces crack')
+    else:
+        st.error('No ha pulsado el boton')
+
+    tab1, tab2, tab3 = st.tabs(['Leones', 'Capitanes', 'Cangrejos'])
+
+    with tab1:
+        st.header('Leones de Pnce')
+        st.image('assets/LEONES.png', width= 200)
+    
+    with tab2:
+        st.header('Capitanes')
+        st.image('assets/CAPITANES.png', width= 200)
+
+    with tab3:
+        st.header('Cangrejos')
+        st.image('assets/CANGREJOS.png', width= 200)
 
 
 
