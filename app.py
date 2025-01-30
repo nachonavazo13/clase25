@@ -10,10 +10,12 @@ import streamlit as st
 import pandas as pd
 from PIL import Image
 
+df = pd.read_excel('data/EQUIPOS_LNBP_MEXICO.xlsx')
+
 # configuracion de la app
 def main():
     # Comandos de Texto basicos
-    # st.title('App con Streamlit 25')
+    st.title('App con Streamlit 25')
     # st.header('Este es el Header')
     # st.subheader('Este es el Subheader')
     # st.sidebar.title('Menu')
@@ -32,6 +34,11 @@ def main():
     # st.error('Esto es un error')
     # st.help('Esto es ayuda')
     # st.write('el texto que querramos')
+    st.header('DATAFRAME')
+    st.dataframe(df)
+    st.header('TABLA')
+    st.table(df)
+    
 
 
 
