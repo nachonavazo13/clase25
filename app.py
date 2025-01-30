@@ -113,13 +113,28 @@ def main():
     # st.sidebar.number_input('Introduzca un numero', value=10)
     # st.sidebar.slider('Rango de valores', 0, 100, 50)
 
-    img = Image.open('assets/LEONES.png')
-    st.image(img, caption='Logo de Leones', use_container_width=True)
-    img23 = 'https://static.flashscore.com/res/image/data/0Y2OeCf5-Mmehx7NL.png'
-    st.image(img23, caption='Jordan Bell', use_container_width=True)
+    # img = Image.open('assets/LEONES.png')
+    # st.image(img, caption='Logo de Leones', use_container_width=True)
+    # img23 = 'https://static.flashscore.com/res/image/data/0Y2OeCf5-Mmehx7NL.png'
+    # st.image(img23, caption='Jordan Bell', use_container_width=True)
 
-    with open('assets/3- paso 0 + giro.mp4','rb') as video_file:
-        st.video(video_file, start_time=0)
+    # with open('assets/3- paso 0 + giro.mp4','rb') as video_file:
+    #     st.video(video_file, start_time=0)
+
+    nombre = st.text_input('Ingrese su nombre: ')
+    st.write(nombre)
+
+    mensaje = st.text_area('Ingrese su mensaje: ', height=100)
+    st.write(mensaje)
+
+    edad = st.number_input('Ingrese su edad: ', 1,100,step=1)
+    st.write(edad)
+
+    date = st.date_input('Ingrese date: ')
+    st.write(date)
+
+    time = st.time_input('Ingrese la hora: ')
+    st.write(time)
     
 
 
