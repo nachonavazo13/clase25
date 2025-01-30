@@ -43,74 +43,83 @@ def main():
 
     # Trabajando con component
     # st.sidebar.image('data/nba_logo.png', width=200)
-    posicion =st.selectbox('Seleccione una posicion', 
-                 ["Armadores", "Aleros", "Internos"])
     
-    st.write(f'La posicion es {posicion}')
-
-    opcion = st.multiselect('Seleccione una posicion', 
-                 ["Armadores", "Aleros", "Internos"])
+    # posicion =st.selectbox('Seleccione una posicion', 
+    #              ["Armadores", "Aleros", "Internos"])
     
-    st.write(f'Las posiciones seleccionadas son {opcion}')
+    # st.write(f'La posicion es {posicion}')
 
-
-    edad = st.slider('Seleccione su edad',
-                     min_value=18,
-                     max_value=100, 
-                     value=25,
-                     step=1)
+    # opcion = st.multiselect('Seleccione una posicion', 
+    #              ["Armadores", "Aleros", "Internos"])
     
-    st.write(f'Su edad es {edad}')
+    # st.write(f'Las posiciones seleccionadas son {opcion}')
 
 
-    nivel = st.select_slider('Seleccione su nivel',
-                             options=["Muy bajo","Basico", "Intermedio", "Avanzado", "Super Avanzado"],)
+    # edad = st.slider('Seleccione su edad',
+    #                  min_value=18,
+    #                  max_value=100, 
+    #                  value=25,
+    #                  step=1)
     
-    st.write(f'Su nivel es {nivel}')
+    # st.write(f'Su edad es {edad}')
 
 
-    op = st.radio('Seleccione una opcion',  
-                 ["Armadores", "Aleros", "Internos"])
-    st.write(f'La opcion selecionada es {op}')
-
-
-    check = st.checkbox('Acepto las condiciones')
+    # nivel = st.select_slider('Seleccione su nivel',
+    #                          options=["Muy bajo","Basico", "Intermedio", "Avanzado", "Super Avanzado"],)
     
-    if check:
-        st.success('Aceptaste las condiciones')
-    else:
-        st.error('Debe aceptar las condiciones')
+    # st.write(f'Su nivel es {nivel}')
 
-    rta = st.button('Hola Nacho')
+
+    # op = st.radio('Seleccione una opcion',  
+    #              ["Armadores", "Aleros", "Internos"])
+    # st.write(f'La opcion selecionada es {op}')
+
+
+    # check = st.checkbox('Acepto las condiciones')
     
-    if rta:
-        st.success('Que haces crack')
-    else:
-        st.error('No ha pulsado el boton')
+    # if check:
+    #     st.success('Aceptaste las condiciones')
+    # else:
+    #     st.error('Debe aceptar las condiciones')
 
-    tab1, tab2, tab3 = st.tabs(['Leones', 'Capitanes', 'Cangrejos'])
-
-    with tab1:
-        st.header('Leones de Pnce')
-        st.image('assets/LEONES.png', width= 200)
+    # rta = st.button('Hola Nacho')
     
-    with tab2:
-        st.header('Capitanes')
-        st.image('assets/CAPITANES.png', width= 200)
+    # if rta:
+    #     st.success('Que haces crack')
+    # else:
+    #     st.error('No ha pulsado el boton')
 
-    with tab3:
-        st.header('Cangrejos')
-        st.image('assets/CANGREJOS.png', width= 200)
+    # tab1, tab2, tab3 = st.tabs(['Leones', 'Capitanes', 'Cangrejos'])
+
+    # with tab1:
+    #     st.header('Leones de Pnce')
+    #     st.image('assets/LEONES.png', width= 200)
+    
+    # with tab2:
+    #     st.header('Capitanes')
+    #     st.image('assets/CAPITANES.png', width= 200)
+
+    # with tab3:
+    #     st.header('Cangrejos')
+    #     st.image('assets/CANGREJOS.png', width= 200)
 
 
 
-    st.sidebar.text('Este es el sidebar')
-    st.sidebar.selectbox('Seleccione una opcion', ['Opcion 1', 'Opcion 2', 'Opcion 3'])
-    st.sidebar.multiselect('Seleccione varias opciones', ['Opcion 1', 'Opcion 2', 'Opcion 3'])
-    st.sidebar.radio('Seleccione una opcion', ['Opcion 1', 'Opcion 2', 'Opcion 3'])
-    st.sidebar.checkbox('Seleccione esta opcion', True)
-    st.sidebar.number_input('Introduzca un numero', value=10)
-    st.sidebar.slider('Rango de valores', 0, 100, 50)
+    # st.sidebar.text('Este es el sidebar')
+    # st.sidebar.selectbox('Seleccione una opcion', ['Opcion 1', 'Opcion 2', 'Opcion 3'])
+    # st.sidebar.multiselect('Seleccione varias opciones', ['Opcion 1', 'Opcion 2', 'Opcion 3'])
+    # st.sidebar.radio('Seleccione una opcion', ['Opcion 1', 'Opcion 2', 'Opcion 3'])
+    # st.sidebar.checkbox('Seleccione esta opcion', True)
+    # st.sidebar.number_input('Introduzca un numero', value=10)
+    # st.sidebar.slider('Rango de valores', 0, 100, 50)
+
+    img = Image.open('assets/LEONES.png')
+    st.image(img, caption='Logo de Leones', use_container_width=True)
+    img23 = 'https://static.flashscore.com/res/image/data/0Y2OeCf5-Mmehx7NL.png'
+    st.image(img23, caption='Jordan Bell', use_container_width=True)
+
+    with open('assets/3- paso 0 + giro.mp4','rb') as video_file:
+        st.video(video_file, start_time=0)
     
 
 
