@@ -34,10 +34,63 @@ def main():
     # st.error('Esto es un error')
     # st.help('Esto es ayuda')
     # st.write('el texto que querramos')
-    st.header('DATAFRAME')
-    st.dataframe(df)
-    st.header('TABLA')
-    st.table(df)
+    
+    
+    # st.header('DATAFRAME')
+    # st.dataframe(df)
+    # st.header('TABLA')
+    # st.table(df)
+
+    # Trabajando con component
+    # st.sidebar.image('data/nba_logo.png', width=200)
+    posicion =st.selectbox('Seleccione una posicion', 
+                 ["Armadores", "Aleros", "Internos"])
+    
+    st.write(f'La posicion es {posicion}')
+
+    opcion = st.multiselect('Seleccione una posicion', 
+                 ["Armadores", "Aleros", "Internos"])
+    
+    st.write(f'Las posiciones seleccionadas son {opcion}')
+
+
+    edad = st.slider('Seleccione su edad',
+                     min_value=18,
+                     max_value=100, 
+                     value=25,
+                     step=1)
+    
+    st.write(f'Su edad es {edad}')
+
+
+    nivel = st.select_slider('Seleccione su nivel',
+                             options=["Muy bajo","Basico", "Intermedio", "Avanzado", "Super Avanzado"],)
+    
+    st.write(f'Su nivel es {nivel}')
+
+
+    op = st.radio('Seleccione una opcion',  
+                 ["Armadores", "Aleros", "Internos"])
+    st.write(f'La opcion selecionada es {op}')
+
+
+    check = st.checkbox('Acepto las condiciones')
+    
+    if check:
+        st.success('Aceptaste las condiciones')
+    else:
+        st.error('Debe aceptar las condiciones')
+
+
+
+
+    st.sidebar.text('Este es el sidebar')
+    st.sidebar.selectbox('Seleccione una opcion', ['Opcion 1', 'Opcion 2', 'Opcion 3'])
+    st.sidebar.multiselect('Seleccione varias opciones', ['Opcion 1', 'Opcion 2', 'Opcion 3'])
+    st.sidebar.radio('Seleccione una opcion', ['Opcion 1', 'Opcion 2', 'Opcion 3'])
+    st.sidebar.checkbox('Seleccione esta opcion', True)
+    st.sidebar.number_input('Introduzca un numero', value=10)
+    st.sidebar.slider('Rango de valores', 0, 100, 50)
     
 
 
